@@ -98,8 +98,11 @@
 
       const addParagraph = function (content) {
         //
+        let node = document.createElement('p')
+        node.appendChild(document.createTextNode(content))
+        document.querySelector('div').appendChild(node)
       };
-
+      addParagraph("Bugün Çok Halsizim.")
       /* EXERCISE 7
        Write a function for making the first unordered list disappear.
       */
