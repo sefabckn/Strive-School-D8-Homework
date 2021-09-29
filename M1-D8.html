@@ -38,7 +38,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer onclick="changeFooterText()">
       <p>And this text is just for the exercise too!</p>
       <h2 style="color: red">
         Save this page on your computer and open it with VSCode to get the
@@ -122,23 +122,25 @@
         document.getElementById("firstList").style.backgroundColor='green'
         document.getElementById("secondList").style.backgroundColor='green'
       };
-      paintItGreen()
+      //paintItGreen()
       /* EXERCISE 9
        Make the heading of the page change color every time the user clicks on it.
       */
 
       const makeItClickable = function () {
-        //
-      };
-
+        //let clickNode = document.querySelector("h1").onclick()
+        }
+      
+      makeItClickable()
       /* EXERCISE 10
        Change the footer text with something else when the user clicks on it.
       */
 
       const changeFooterText = function () {
         //
+        document.getElementsByTagName('footer')[0].innerHTML="Dooms Day"
       };
-
+      
       /* EXERCISE 11
        Attach an event listener to the input field in the page for console logging its value just after any keystroke.
       */
