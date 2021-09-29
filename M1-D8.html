@@ -52,6 +52,7 @@
 
       const changeTitle = function (newTitle) {
         //
+        
         document.querySelector("h1").innerHTML= newTitle
       
       };
@@ -61,17 +62,18 @@
       */
 
       const addClassToTitle = function () {
-        //
+        document.querySelector("h1").className="myHeading"
       };
-
+      addClassToTitle()
       /* EXERCISE 3
        Write a function for changing the text of only the p which are children of a div.
       */
 
       const changePcontent = function () {
         //
+        document.querySelector("p").innerHTML= "Hello"
       };
-
+      changePcontent()
       /* EXERCISE 4
        Write a function for changing the href property of every link to https://www.google.com
       */
