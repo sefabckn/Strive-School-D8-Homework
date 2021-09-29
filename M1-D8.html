@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1>This is the title of the page</h1>
+      <h1 onclick="makeItClickable()">This is the title of the page</h1>
       <h2>This is the subtitle of the page</h2>
     </header>
 
@@ -56,7 +56,7 @@
         document.querySelector("h1").innerHTML= newTitle
       
       };
-      changeTitle("My own Title")
+      //changeTitle("My own Title")
       /* EXERCISE 2
        Write a function for changing the class of the title of the page in "myHeading".
       */
@@ -64,7 +64,7 @@
       const addClassToTitle = function () {
         document.querySelector("h1").className="myHeading"
       };
-      addClassToTitle()
+      //addClassToTitle()
       /* EXERCISE 3
        Write a function for changing the text of only the p which are children of a div.
       */
@@ -128,10 +128,10 @@
       */
 
       const makeItClickable = function () {
-        //let clickNode = document.querySelector("h1").onclick()
+        //
+        document.getElementsByTagName('h1')[0].style.color="red"
         }
       
-      makeItClickable()
       /* EXERCISE 10
        Change the footer text with something else when the user clicks on it.
       */
